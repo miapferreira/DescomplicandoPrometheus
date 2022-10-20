@@ -17,7 +17,7 @@ Realize o download da versão mais recente do Prometheus utilizando o comando ab
 curl -LO https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz
 ```
 
-Após o download, descompactue o arquivo:
+Após o download, descompactue o arquivo.
 
 ```bash
 tar -xvf prometheus-2.38.0.linux-amd64.tar.gz
@@ -30,7 +30,7 @@ sudo mv prometheus-2.38.0.linux-amd64/prometheus /usr/local/bin/prometheus
 sudo mv prometheus-2.38.0.linux-amd64/promtool /usr/local/bin/promtool
 ```
 
-Verifiquei se o binário está funcionando.
+Verifique se o binário está funcionando.
 
 ```bash
 prometheus --version
@@ -42,7 +42,7 @@ prometheus, version 2.38.0 (branch: HEAD, revision: 818d6e60888b2a3ea363aee8a982
   platform:         linux/amd64
 ```
 
-Crie os seguintes diretórios de necessários para configuração do prometheus
+Crie os seguintes diretórios de necessários para configuração do prometheus.
 
 ```bash
 sudo mkdir /etc/prometheus
