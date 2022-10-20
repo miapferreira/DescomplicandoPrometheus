@@ -1,3 +1,14 @@
+# Prometheus
+
+Este projeto tem como objetivo documentar e compartilhar o conhecimento adquiridido durante os meus estudos sobre o prometheus.
+
+
+## Referências
+
+ - [Treinamento LinuxTips Descomplicando o Promethueus](https://github.com/badtuxx/DescomplicandoPrometheus)
+ - [Documentação oficial Prometheus](https://prometheus.io/)
+
+
 ## Instalação do prometheus no linux
 
 Realize o download da versão mais recente do Prometheus utilizando o comando abaixo, aqui vamos utilizar a versão [2.38.0].
