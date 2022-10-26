@@ -6,11 +6,11 @@ import (
 
 	"github.com/pbnjay/memory"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/promhttp"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
 func memoriaLivre() float64 {
-	memoria_livre := memory.Freememory
+	memoria_livre := memory.FreeMemory()
 	return float(memoria_livre)
 }
 
@@ -50,7 +50,7 @@ func init() {
 
 func main() {
 	memoria_LivreBytesGauge.Set(memoriaLivre())
-	memoria_LivreBytesGauge.Set(memoriaLivre() / 1024 / 1024)
+	memoria_LivreMegasGauge.Set(memoriaLivre() / 1024 / 1024)
 	totalmemoriaBytesGauge.Set(totaMemoria())
 	totalmemoriaGigasGauge.Set(totalMemoria() / 1024 / 1024 / 1024)
 	http.Handle("/metrics", promhttp.Handler())
