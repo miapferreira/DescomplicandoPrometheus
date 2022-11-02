@@ -47,6 +47,7 @@ Crie os seguintes diretórios de necessários para configuração do prometheus
 ```bash
 sudo mkdir /etc/prometheus
 sudo mkdir /var/lib/prometheus
+sudo mkdir /var/log/prometheus
 ````
 
 Crie um grupo e um usuário para o Prometheus.
