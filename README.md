@@ -115,6 +115,28 @@ http://localhost:9090
 Por fim, teremos completado nossa instalação se seu navegador mostrar a imagem abaixo :D 
 
 ![Prometheus instalado no Linux](images/prometheus_interface_web.png)
-&nbsp;
 
-&nbsp;
+
+# Tipos de dos utilizados pelo Prometheus
+## Gauge
+
+O Gauge trabalha com variacao de dados, como por exemplo temperatura, consumo de cpu, memória, etc..
+
+## Counter 
+
+Sao dados que vao ser incrementados ao longo do tempo, como por exemplo a quantidade de requisicoes com sucesso 
+uma aplicacao recebeu (HTTP status code 200, 4xx, 5xx)
+
+## Histogram
+
+Utiliza buckets que já sao pré-definidos com seu valor, por exemplo,
+quero consultar o tempo de que cada requisicao durou
+- 0,5 segundos -> 100 requests 
+- 1 segundos -> 150 requisicao
+- 2 segundos -> 37 requests
+
+## Summary
+
+O sumary funciona como histogram, a diferenca basicamente é que os buckets sao chamados 
+de quantiles eu nao vou ter a mesma flexibilidade de consulta no 
+momento da query, ele já vai me retornar os valores exatos, ou seja, o seu resumo.
