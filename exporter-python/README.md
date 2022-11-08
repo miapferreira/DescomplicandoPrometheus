@@ -26,6 +26,9 @@ curl http://localhost:8899/metrics/
 Verifique a saída que deverá ser algo como abaixo :D 
 
 ![log](images/exporter_py_img.png)
+&nbsp;
+
+&nbsp;
 
 ## Adicionando nosso exporter em um container
 
