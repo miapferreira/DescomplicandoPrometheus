@@ -25,7 +25,7 @@ curl http://localhost:8899/metrics/
 
 Verifique a saída que deverá ser algo como abaixo :D 
 
-![log](prometheus/images/exporter_py_img.png)
+![log](https://github.com/miapferreira/prometheus/blob/master/images/exporter_py_img.png)
 
 
 ## Adicionando nosso exporter em um container
