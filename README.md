@@ -117,7 +117,7 @@ Por fim, teremos completado nossa instalação se seu navegador mostrar a imagem
 ![Prometheus instalado no Linux](images/prometheus_interface_web.png)
 
 
-# Tipos de dos utilizados pelo Prometheus
+# Tipos de dados utilizados pelo Prometheus
 ## Gauge
 
 O Gauge trabalha com variacao de dados, como por exemplo temperatura, consumo de cpu, memória, etc..
