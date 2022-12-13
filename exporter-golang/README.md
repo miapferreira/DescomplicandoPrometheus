@@ -3,7 +3,7 @@
 
 Detalhando um passo a passo para criar um exporter utilizando Golang para nos trazer métricas referente ao consumo de  memória.
 
-Crie o arquivo exporter.go conforme o exemplo deste [_arquivo_](https://github.com/miapferreira/prometheus/blob/master/exporter-golang/exporter.go).
+Crie o arquivo exporter.go conforme o exemplo deste [_arquivo_](https://github.com/miapferreira/DescomplicandoPrometheus/blob/master/exporter-golang/exporter.go).
 
 ```bash
 vim exporter.go
